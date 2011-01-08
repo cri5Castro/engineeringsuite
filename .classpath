@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/batik-dom-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/batik-ext-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/batik-util-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/batik-xml-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/commons-io-1.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/google-collect-1.0-rc3.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/iText-5.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/jeuclid-core-3.1.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/jnlp.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/jsr305.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/log4j-1.2.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/meconsole.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/rsyntaxtextarea.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/swingx-core-1.6.2-AutoCompletition.jar"/>
+	<classpathentry exported="true" kind="lib" path="Dependencies/xmlgraphics-commons-1.3.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/home/pablo/Universidad/Codigo/eSuite/Dependencies/grouplayout.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
