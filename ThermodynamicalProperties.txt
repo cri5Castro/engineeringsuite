@@ -1,0 +1,573 @@
+Material: Air;
+Property: Cp;
+Formula: Cp=4.184/28.88*(6.713+10^(-2)*0.04697*Temperature+10^-5*0.1147*Temperature^2-10^-9*0.4696*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.33
+Validity: 273 to 1800 Kelvin
+
+Material: Air;
+Property: Cv;
+Formula: cv=4.184/28.88*(6.713+10^(-2)*0.04697*temperature+10^-5*0.1147*temperature^2-10^-9*0.4696*temperature^3)-0.28704;
+Variable: Cv, Temperature;
+Note:Temperature: Kelvin.
+Cv: Kj/(Kg*Kelvin)
+Average error: 0.33
+Validity: 273 to 1800 Kelvin
+
+Material: Air;
+Property: Enthalpy;
+Formula: 12.074*temp^0+0.924502*temp^1+0.000115985*temp^2+-0.563569*10^-8*temp^3=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Enthalpy = Kj/Kg
+250 <= Temperature <= 2000 Kelvin
+Maximum absolute differece: 0,27%
+
+Material: Air;
+Property: InternalEnergy;
+Formula: 12.074*temp^0+0.924502*temp^1+0.000115985*temp^2+-0.563569*10^-8*temp^3-0.28704*temp=u;
+Variable: Temp, U;
+Note:Internal Energy U:Kj/Kg
+250<= Temperature <= 2000 Kelvin
+Maximum absolute difference= 0.40%
+
+Material: Air;
+Property: Entropy;
+Formula: entropy=1.386989+0.18493*10^-3*temp+0.95*Log[temp];
+Variable: Entropy, Temp;
+Note:Entropy: Kj/Kg
+250 <= Temperature <= 2000 Kelvin
+Maximum absolute difference: 0.06%
+
+Material: Air;
+Property: Isentropic_Pressure_Function;
+Formula: ipr=(1.386989+0.18493*10^-3*temp+0.95*Log[temp])/0.28704;
+Variable: IPR, temp;
+Note:IPR:Kelvin
+250 <= Temperature <= 2000 Kelvin
+Maximum absolute difference: 0.06%
+
+Material: Air;
+Property: Isentropic_Volume_Function;
+Formula: ivr=Log[0.28704*temp]-((1.386989+0.18493*10^-3*temp+0.95*Log[temp])/0.28704);
+Variable: IVR, Temp;
+Note:IVR:kelvin
+250 <= Temperature <= 2000 Kelvin
+Maximum absolute difference:0.06%
+
+Material: Air;
+Property: Specific_Heat_Ratio;
+Formula: g=1/(1-(0.28704/(4.184/28.88*(6.713+10^(-2)*0.04697*temperature+10^-5*0.1147*temperature^2-10^-9*0.4696*temperature^3))));
+Variable: G, Temperature;
+Note:Specific Heat Ratio G: Kelvin
+250 <= Temperature <= 2000 Kelvin
+Average error: 0.33%
+
+Material: Air;
+Property: Speed_of_Sound;
+Formula: sos=31.558*((1/(1-(0.28704/(4.184/28.88*(6.713+10^(-2)*0.04697*temperature+10^-5*0.1147*temperature^2-10^-9*0.4696*temperature^3)))))0.28704*temperature)^0.5;
+Variable: SoS, temperature;
+Note:Speed of Sound SoS: m/s
+250<= Temperature <= 2000 Kelvin
+Average error:0.33%
+
+Material: Argon;
+Property: Cp;
+Formula: cp=0.52034;
+Variable: Cp;
+Note:Cp(Kj/(Kg*Kelvin)) it's constant
+
+Material: Argon;
+Property: Enthalpy;
+Formula: enthalpy=0.52034*temp;
+Variable: Enthalpy, Temp;
+Note:Ideal Gas
+Enthalpy:Kj/Kg
+Temperature: Kelvin
+
+Material: Argon;
+Property: Entropy;
+Formula: entropy=0.52034*Log[temp];
+Variable: Entropy, Temp;
+Note:Entropy: Kj/(Kg*Kelvin)
+Temperature: Kelvin
+Ideal gas
+
+Material: Butane;
+Property: Cp;
+Formula: Cp=4.184/58.08*(0,954+8.873*10^-2*Temperature-4.38*10^-5*Temperature^2+8.360*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.24
+Validity: 273 to 1500
+
+Material: Butane;
+Property: Enthalpy;
+Formula: 0.23665134/(1)*temp^1+5.10573*10^-3/(2)*temp^2+-4.16089*10^-7/(3)*temp^3+-1.1450804*10^-9/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal Gas
+Enthalpy: Kj/Kg
+280 <= Temperature <= 1080 Kelvin
+Maximum difference: 0.1%
+
+
+Material: Butane;
+Property: Entropy;
+Formula: 0.23665134*Log[temp]+5.10573*10^-3/(1)*temp^1+-4.16089*10^-7/(2)*temp^2+-1.1450804*10^-9/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Entropy: Kj/(Kg*K)
+280 <= Temperature <= 1080 Kelvin
+Maximum difference: 0.1%
+Ideal gas
+
+Material: CarbonMonoxide;
+Property: Cp;
+Formula: Cp=4.184/28,0101*(9.726+0.04001*10^-2*Temperature+0.1283*10^-5*Temperature^2-0.5307*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.30
+Validity: 273 to 1800
+
+Material: CarbonMonoxide;
+Property: Enthalpy;
+Formula: 1.020802/(1)*temp^1+3.82075*10^-4/(2)*temp^2+-2.4945*10^-6/(3)*temp^3+6.81145*10^-9/(4)*temp^4+-7.93722*10^-12/(5)*temp^5+4.291972*10^-15/(6)*temp^6+-8.903274*10^-19/(7)*temp^7=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+250 <= Temperature <= 1050 Kelvin
+Maximum diference 0.1%
+
+Material: CarbonMonoxide;
+Property: Entropy;
+Formula: 1.020802*Log[temp]+3.82075*10^-4/(1)*temp^1+-2.4945*10^-6/(2)*temp^2+6.81145*10^-9/(3)*temp^3+-7.93722*10^-12/(4)*temp^4+4.291972*10^-15/(5)*temp^5+-8.903274*10^-19/(6)*temp^6=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+250 <= Temperature <= 1050 Kelvin
+Maximum diference 0.1%
+
+Material: CarbonDioxide;
+Property: Cp;
+Formula: Cp=4.184/44.010*(5.316+1.4285*10^-2*Temperature-0.8362*10^-5*Temperature^2+1.784*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.22
+Validity: 273 to 1800
+
+Material: CarbonDioxide;
+Property: Enthalpy;
+Formula: 0.45386462/(1)*temp^1+1.5334795*10^-3/(2)*temp^2+-4.195556*10^-7/(3)*temp^3+-1.871946*10^-9/(4)*temp^4+2.862388*10^-12/(5)*temp^5+-1.6962*10^-15/(6)*temp^6+3.717285*10^-19/(7)*temp^7=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+200 <= Temperature <= 1000 Kelvin
+Maximum diference 0.14%
+
+Material: CarbonDioxide;
+Property: Entropy;
+Formula: 0.45386462*Log[temp]+1.5334795*10^-3/(1)*temp^1+-4.195556*10^-7/(2)*temp^2+-1.871946*10^-9/(3)*temp^3+2.862388*10^-12/(4)*temp^4+-1.6962*10^-15/(5)*temp^5+3.717285*10^-19/(6)*temp^6=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+200 <= Temperature <= 1000 Kelvin
+Maximum diference 0.14%
+
+Material: Ethane;
+Property: Cp;
+Formula: Cp=4.184/30,07*(1.648+10^-2*Temperature*4.124-1.53*10^-5*Temperature^2+1.740*10^-9*Temperature);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.28
+Validity: 273 to 1500
+
+Material: Ethane;
+Property: Enthalpy;
+Formula: 0.5319795/(1)*temp^1+3.755877*10^-3/(2)*temp^2+1.789289*10^-6/(3)*temp^3+-2.13225*10^-9/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+280 <= Temperature <= 1080 Kelvin
+Maximum diference 0.9%
+
+Material: Ethane;
+Property: Entropy;
+Formula: 0.5319795*Log[temp]+3.755877*10^-3/(1)*temp^1+1.789289*10^-6/(2)*temp^2+-2.13225*10^-9/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+280 <= Temperature <= 1080 Kelvin
+Maximum diference 0.9%
+
+Material: Hydrogen;
+Property: Cp;
+Formula: Cp=4.184/1.0079*(6.952-0.04576*10^-2*Temperature+0.09563*10^-5*Temperature^2-0.2079*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.79
+Validity: 273 to 1800
+
+Material: Hydrogen;
+Property: Enthalpy_2;
+Formula: 14.4947/(1)*temp^1=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+425 <= Temperature <= 490 Kelvin
+
+Material: Hydrogen;
+Property: Entropy_2;
+Formula: 14.4947*Log[temp]=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+425 <= Temperature <= 490 Kelvin
+
+Material: Hydrogen;
+Property: Enthalpy_1;
+Formula: 5.0066253/(1)*temp^1+1.01569422*10^-1/(2)*temp^2+-6.02891517*10^-4/(3)*temp^3+2.7375894*10^-6/(4)*temp^4+-8.4758275*10^-9/(5)*temp^5+1.43800374*10^-11/(6)*temp^6+-9.8072403*10^-15/(7)*temp^7=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+250 <= Temperature <= 425 Kelvin
+Maximum diference 0.06%
+
+Material: Hydrogen;
+Property: Entropy_1;
+Formula: 5.0066253*Log[temp]+1.01569422*10^-1/(1)*temp^1+-6.02891517*10^-4/(2)*temp^2+2.7375894*10^-6/(3)*temp^3+-8.4758275*10^-9/(4)*temp^4+1.43800374*10^-11/(5)*temp^5+-9.8072403*10^-15/(6)*temp^6=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+250 <= Temperature <= 425 Kelvin
+Maximum diference 0.06%
+
+Material: Helium;
+Property: Cp;
+Formula: 5.1931=cp;
+Variable: Cp;
+Note:Cp it's constant
+
+Material: Helium;
+Property: Enthalpy;
+Formula: 5.1931*temp^1=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+250 <= Temperature <= 1050 Kelvin
+
+Material: Helium;
+Property: Entropy;
+Formula: 5.1931*Log[temp]=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+250 <= Temperature <= 1050 Kelvin
+
+Material: Methane;
+Property: Cp;
+Formula: Cp=4.184/16.043*(4.750+10^-2*Temperature*1.2+10^-5*Temperature^2*0.303-10^-9*2.63*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.57
+Validity: 273 to 1500
+
+Material: Methane;
+Property: Enthalpy;
+Formula: 1.9165258/(1)*temp^1+-1.09269*10^-3/(2)*temp^2+8.696605*10^-6/(3)*temp^3+-5.2291144*10^-9/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+280 <= Temperature <= 1080 Kelvin
+Maximum diference 0.9%
+
+Material: Methane;
+Property: Entropy;
+Formula: 1.9165258*Log[temp]+-1.09269*10^-3/(1)*temp^1+8.696605*10^-6/(2)*temp^2+-5.2291144*10^-9/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+280 <= Temperature <= 1080 Kelvin
+Maximum diference 0.9%
+
+Material: Nitrogen;
+Property: Cp;
+Formula: Cp=4.184/14.0067*(6.903-0.03753*10^-2*Temperature+0.193*10^-5*Temperature^2-0.6861*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.34
+Validity: 273 to 1800
+
+Material: Nitrogen;
+Property: Enthalpy;
+Formula: 1.088047/(1)*temp^1+-3.55968*10^-4/(2)*temp^2+7.2907605*10^-7/(3)*temp^3+-2.8861556*10^-10/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+280 <= Temperature <= 1050 Kelvin
+Maximum diference 0.2%
+
+Material: Nitrogen;
+Property: Entropy;
+Formula: 1.088047*Log[temp]+-3.55968*10^-4/(1)*temp^1+7.2907605*10^-7/(2)*temp^2+-2.8861556*10^-10/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+280 <= Temperature <= 1050 Kelvin
+Maximum diference 0.2%
+
+Material: Oxygen;
+Property: Cp;
+Formula: Cp=4.184/15.9994*(6.085+0.3631*10^-2*Temperature-0.1709*10^-5*Temperature^2+0.3133*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.28
+Validity: 273 to 1800
+
+Material: Oxygen;
+Property: Enthalpy;
+Formula: 0.929247/(1)*temp^1+-3.220603*10^-4/(2)*temp^2+1.166523*10^-6/(3)*temp^3+-7.1157865*10^-10/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+250 <= Temperature <= 1050 Kelvin
+Maximum diference 0.4%
+
+Material: Oxygen;
+Property: Entropy;
+Formula: 0.929247*Log[temp]+-3.220603*10^-4/(1)*temp^1+1.166523*10^-6/(2)*temp^2+-7.1157865*10^-10/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+250 <= Temperature <= 1050 Kelvin
+Maximum diference 0.4%
+
+Material: Propane;
+Property: Cp;
+Formula: Cp=4.184/44*(-0.966+7.279*10^-2*Temperature-3.755*10^-5*Temperature^2+7.850*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.12
+Validity: 273 to 1500
+
+Material: Propane;
+Property: Enthalpy;
+Formula: 8.41607*10^-2/(1)*temp^1+5.7701407*10^-3/(2)*temp^2+-1.292127*10^-6/(3)*temp^3+-6.9945925*10^-10/(4)*temp^4=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+280 <= Temperature <= 1080 Kelvin
+Maximum diference 0.86%
+
+Material: Propane;
+Property: Entropy;
+Formula: 8.41607*10^-2*Log[temp]+5.7701407*10^-3/(1)*temp^1+-1.292127*10^-6/(2)*temp^2+-6.9945925*10^-10/(3)*temp^3=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/Kg
+280 <= Temperature <= 1050 Kelvin
+Maximum diference 0.35%
+
+Material: SteamSaturated;
+Property: Cp;
+Formula: Cp=4.184/18.01528*(7.7+0.04594*10^-2*Temperature+0.2521*10^-5*Temperature^2-0.8587*10^-9*Temperature^3);
+Variable: Cp, Temperature;
+Note:Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.24
+Validity: 273 to 1800
+
+Material: SteamSaturated;
+Property: SaturationTemp_1;
+Formula: temperature=0.426776*10^2+(-0.38927*10^4/(Log[pressure]-0.948654*10^1));
+Variable: Pressure, Temperature;
+Note:0,000611 <= Pressure < 12.33 MPa
+273,16 <= Temperature < 600 Kelvin
+Deviation: 0.08 %
+
+Material: SteamSaturated;
+Property: SaturationTemp_2;
+Formula: temperature=-0.387592*10^3+(-0.125875*10^5/(Log[pressure]-0.152578*10^2));
+Variable: Pressure, Temperature;
+Note:12,33 <= Pressure<=22,1 MPa
+600 <= Temperature <= 647,3 Kelvin
+Deviation: 0,08 %
+
+Material: SteamSaturated;
+Property: Specific_Liquid_Volume;
+Formula: 1.0-1.9153882(1-temp/647.3)^(1/3)+12.015186(1-temp/647.3)^(5/6)-7.8464025(1-temp/647.3)^(7/8)-3.888614(1-temp/647.3)^1+2.0582238(1-temp/647.3)^2-2.0829991(1-temp/647.3)^(3)+0.82180004(1-temp/647.3)^4+0.47549742(1-temp/647.3)^5=volume/3.155*10^(-3);
+Variable: Temp, Volume;
+Note:Volume: m^3
+273,16 <= Temperature <= 647,3 K
+Deviation: 0,1%
+
+Material: SteamSaturated;
+Property: Specific_Vapor_Volume;
+Formula: 1.0+1.6351057(1-temp/647.3)^(1/3)+52.584599(1-temp/647.3)^(5/6)+-44.694653(1-temp/647.3)^(7/8)+-8.9751114(1-temp/647.3)^1+-0.4384553(1-temp/647.3)^2+-19.179576(1-temp/647.3)^3+36.765319(1-temp/647.3)^4+-19.462437(1-temp/647.3)^5+0.0(1-temp/647.3)^6+0.0(1-temp/647.3)^7=volume*pressure/(3.155*10^(-3)*22.089);
+Variable: Pressure, Temp, Volume;
+Note:Volume: m^3
+Pressure: Mpa
+273.16 <= Temperature <= 647.13 Kelvin
+Deviation: 0.1%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Enthalpy_1;
+Formula: 624.698837(1-temp/647.3)^1+-2343.85369(1-temp/647.3)^2-9508.12101(1-temp/647.3)^3+71628.7928(1-temp/647.3)^4-163535.221(1-temp/647.3)^5+166531.1093(1-temp/647.3)^6+-64785.4585(1-temp/647.3)^7=(enthalpy/2099.3);
+Variable: Enthalpy, Temp;
+Note:Enthalpy: Kj/Kg
+273,16 <= Temperature <= 300 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Enthalpy_2;
+Formula: 0.8839230108-2.67172935(1-temp/647.3)^1+6.22640035(1-temp/647.3)^2-13.1789573(1-temp/647.3)^3-1.91322436(1-temp/647.3)^4+68.7937653(1-temp/647.3)^5+-124.819906(1-temp/647.3)^6+72.1435404(1-temp/647.3)^7=enthalpy/2099.3;
+Variable: Enthalpy, Temp;
+Note:Enthalpy : Kj/Kg
+300 <= Temperature <= 600 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Enthalpy_3;
+Formula: 1.0+-0.441057805(1-temp/647.3)^(1/3)+-5.52255517(1-temp/647.3)^(5/6)+6.43994847(1-temp/647.3)^(7/8)+-1.64578795(1-temp/647.3)^1+-1.30574143(1-temp/647.3)^2=enthalpy/(2099.3);
+Variable: Enthalpy, Temp;
+Note:Enthalpy: Kj/Kg
+600 <= Temperature <= 647,3 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Latent_Heat_Vaporization;
+Formula: 0.0+0.779221(1-temp/647.3)^(1/3)+4.62668(1-temp/647.3)^(5/6)+-1.07931(1-temp/647.3)^(7/8)+-3.87446(1-temp/647.3)^1+2.94553(1-temp/647.3)^2+-8.06395(1-temp/647.3)^3+11.5633(1-temp/647.3)^4+-6.02884(1-temp/647.3)^5=enthalpy/(2500.9);
+Variable: Enthalpy, Temp;
+Note:Enthalpy: Kj/Kg
+273,16 <= Temperature <= 647,3 Kelvin
+Deviation: 0.15%
+
+Material: SteamSaturated;
+Property: Saturated_Vapor_Enthalpy;
+Formula: 1.0+0.457874342(1-temp/647.3)^(1/3)+5.08441288(1-temp/647.3)^(5/6)+-1.48513244(1-temp/647.3)^(7/8)+-4.81351884(1-temp/647.3)^1+2.69411792(1-temp/647.3)^2+-7.39064542(1-temp/647.3)^3+10.4961689(1-temp/647.3)^4+-5.46840036(1-temp/647.3)^5+0.0(1-temp/647.3)^6+0.0(1-temp/647.3)^7=enthalpy/(2099.3);
+Variable: Enthalpy, Temp;
+Note:Enthalpy: Kj/Kg
+273,16 <= Temperature <= 647,13 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Entropy_1;
+Formula: -1836.92956(1-temp/647.3)^1+14706.6352(1-temp/647.3)^2+-43146.6046(1-temp/647.3)^3+48606.6733(1-temp/647.3)^4+7997.5096(1-temp/647.3)^5+-58333.9887(1-temp/647.3)^6+33140.0718(1-temp/647.3)^7=entropy/4.4289;
+Variable: Entropy, Temp;
+Note:Entropy: kj/(Kg*K)
+273,16 <= Temperature <= 300 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Entropy_2;
+Formula: 0.912762917-1.75702956(1-temp/647.3)^1+1.68754095(1-temp/647.3)^2+5.82215341(1-temp/647.3)^3+-63.33354786(1-temp/647.3)^4+188.076546(1-temp/647.3)^5+-252.3445312(1-temp/647.3)^6+128.058531(1-temp/647.3)^7=entropy/4.4289;
+Variable: Entropy, Temp;
+Note:Entropy: Kj/(Kg*Kelvin)
+300 <= Temperature <= 600 Kelvin
+Deviation: 0.05%
+
+Material: SteamSaturated;
+Property: Saturated_Liquid_Entropy_3;
+Formula: 1.0+-0.32481765(1-temp/647.3)^(1/3)+-2.990556709(1-temp/647.3)^(5/6)+3.23419(1-temp/647.3)^(7/8)+-0.678067859(1-temp/647.3)^1-1.91910364(1-temp/647.3)^2=entropy/4.4289;
+Variable: Entropy, Temp;
+Note:Entropy:Kj/(Kg*Kelvin)
+600 <= Temperature <= 647.3
+Deviation: 0.02%
+
+Material: SteamSaturated;
+Property: Saturated_Vapor_Entropy;
+Formula: 1.0+0.377391(1-temp/647.3)^(1/3)+-2.78368(1-temp/647.3)^(5/6)+6.93135(1-temp/647.3)^(7/8)+-4.34839(1-temp/647.3)^1+1.34672(1-temp/647.3)^2+1.75261(1-temp/647.3)^3+-6.22295(1-temp/647.3)^4+9.99004(1-temp/647.3)^5=entropy/4.4289;
+Variable: Entropy, Temp;
+Note:Entropy: Kj/(Kg*Kelvin)
+273,16 <= Temperature <= 647,3 Kelvin
+Deviation:0.05%
+
+Material: SulfurDioxide;
+Property: Cp;
+Formula: 4.32805*10^-1*temp^0+5.9994156*10^-4*temp^1+4.593367*10^-7*temp^2+-1.433024*10^-9*temp^3+1.0409341*10^-12*temp^4+-2.5313735*10^-16*temp^5+0.0*temp^6=cp;
+Variable: Cp, Temp;
+Note:Ideal gas
+Cp: Kj/(Kg*Kelvin)
+300 <= Temperature <= 1100 Kelvin
+Maximum diference 0.24%
+
+Material: SulfurDioxide;
+Property: Enthalpy;
+Formula: 4.32805*10^-1/(1)*temp^1+5.9994156*10^-4/(2)*temp^2+4.593367*10^-7/(3)*temp^3+-1.433024*10^-9/(4)*temp^4+1.0409341*10^-12/(5)*temp^5+-2.5313735*10^-16/(6)*temp^6=enthalpy;
+Variable: Enthalpy, Temp;
+Note:Ideal gas
+Enthalpy: Kj/Kg
+300 <= Temperature <= 1100 Kelvin
+Maximum diference 0.24%
+
+Material: SulfurDioxide;
+Property: Entropy;
+Formula: 4.32805*10^-1*Log[temp]+5.9994156*10^-4/(1)*temp^1+4.593367*10^-7/(2)*temp^2+-1.433024*10^-9/(3)*temp^3+1.0409341*10^-12/(4)*temp^4+-2.5313735*10^-16/(5)*temp^5=entropy;
+Variable: Entropy, Temp;
+Note:Ideal gas
+Entropy: Kj/(Kg*Kelvin)
+300 <= Temperature <= 1100 Kelvin
+Maximum diference 0.24%
+
+Material: SteamSuperHeated;
+Property: Specific_Volume_1;
+Formula: volume=4.61631*10^-4*temp/press-0.0527993*Exp[-0.00375928*temp]+0.1/press(0.022-Exp[-3.741378-4.7838281*10^-3*(42.6776+(-3892.7/(Log[press]-9.48654)))^1+1.5923434*10^-5*(42.6776+(-3892.7/(Log[press]-9.48654)))^2])Exp[((42.6776+(-3892.7/(Log[press]-9.48654)))-temp)/40];
+Variable: Press, Temp, Volume;
+Note:Volume: m^3
+Temperature: Kelvin
+0.001 <= Pressure <= 12 MPa
+Maximum deviation: 1%
+
+Material: SteamSuperHeated;
+Property: Specific_Volume_2;
+Formula: volume=4.61631*10^-4*temp/press-0.0527993*Exp[-0.00375928*temp]+0.1/press(0.022-Exp[-3.741378+-4.7838281*10^-3*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^1+1.5923434*10^-5*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^2])Exp[((-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))-temp)/40];
+Variable: Press, Temp, Volume;
+Note:Volume: m^3
+Temperature: Kelvin
+12 < Pressure <= 22.1 MPa
+Maximun deviation: 1%
+
+Material: SteamSuperHeated;
+Property: Enthalpy_1;
+Formula: (2041.21+-40.40021*press+-0.48095*press^2)+(1.610693+0.05472051*press+7.517537*10^-4*press^2)*temp^1+(3.383117*10^-4+-1.975736*10^-5*press+-2.87409*10^-7*press^2)*temp^2-(1707.82+-16.99419*(42.6776+(-3892.7/(Log[press]-9.48654)))+0.062746295*(42.6776+(-3892.7/(Log[press]-9.48654)))^2+-1.0254259*10^-4*(42.6776+(-3892.7/(Log[press]-9.48654)))^3+6.4561298*10^-8*(42.6776+(-3892.7/(Log[press]-9.48654)))^4)*Exp[((42.6776+(-3892.7/(Log[press]-9.48654)))-temp)/45]=enthalpy;
+Variable: Enthalpy, Press, Temp;
+Note:Enthalpy: Kj/Kg
+temperature: Kelvin
+0.001 <= Pressure <= 12 MPa
+Maximum deviation: 1%
+
+Material: SteamSuperHeated;
+Property: Enthalpy_2;
+Formula: (2041.21+-40.40021*press+-0.48095*press^2)+(1.610693+0.05472051*press+7.517537*10^-4*press^2)*temp^1+(3.383117*10^-4+-1.975736*10^-5*press+-2.87409*10^-7*press^2)*temp^2-(1707.82+-16.99419*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))+0.062746295*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^2+-1.0254259*10^-4*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^3+6.4561298*10^-8*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^4)*Exp[((-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))-temp)/45]=enthalpy;
+Variable: Enthalpy, Press, Temp;
+Note:Enthalpy: Kj/Kg
+Temperature: Kelvin
+12 < Pressure <= 22.1 MPa
+Maximum deviation: 1%
+
+Material: SteamSuperHeated;
+Property: Entropy_1;
+Formula: 4.6162961+0.01039008*temp^1+-9.873085*10^-6*temp^2+5.43411*10^-9*temp^3+-1.170465*10^-12*temp^4+-0.4650306*Log[10*press+0.001]-(1.777804+-0.01802468*(42.6776+(-3892.7/(Log[press]-9.48654)))^1+6.854459*10^-5*(42.6776+(-3892.7/(Log[press]-9.48654)))^2+-1.184424*10^-7*(42.6776+(-3892.7/(Log[press]-9.48654)))^3+8.142201*10^-11*(42.6776+(-3892.7/(Log[press]-9.48654)))^4)*Exp[((42.6776+(-3892.7/(Log[press]-9.48654)))-temp)/85]=entropy;
+Variable: Entropy, Press, Temp;
+Note:Entropy: Kj/(Kg*Kelvin)
+Temperature:Kelvin
+0.001 <= Pressure <= 12 MPa
+Maximum deviation: 1%
+
+Material: SteamSuperHeated;
+Property: Entropy_2;
+Formula: 4.6162961+0.01039008*temp^1+-9.873085*10^-6*temp^2+5.43411*10^-9*temp^3+-1.170465*10^-12*temp^4+-0.4650306*Log[10*press+0.001]-(1.777804+-0.01802468*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^1+6.854459*10^-5*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^2+-1.184424*10^-7*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^3+8.142201*10^-11*(-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))^4)*Exp[((-0.387592*10^3+(-0.125875*10^5/(Log[press]-0.152578*10^2)))-temp)/85]=entropy;
+Variable: Entropy, Press, Temp;
+Note:Entropy:Kj/(Kg*Kelvin)
+Temperature: Kelvin
+12 < Pressure <= 22.1
+Maximum deviation: 1%
+

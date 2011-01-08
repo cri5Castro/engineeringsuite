@@ -1,0 +1,31 @@
+/**You can change the LANGUAGE and the THEME in edit/Preferences.
+There are two kind of commentaries:
+Red: Starts with /** and finish with */
+/*And green: starts with /* and finish with */
+/**See the two examples below: *//*Lets see two examples:
+
+*//*First example, usual equation system:*/
+
+F = M * A
+M = 2 * 2 + 1 - 1 + sin(Pi) + sinh(e)
+A = 2^2*(exp(2/3)+log(1))
+
+/**Second example, thermodynamic functions:*/
+
+/**Temperature: Kelvin.
+Cp: Kj/(Kg*Kelvin)
+Average error: 0.24
+Validity: 273 to 1500*/
+Butane.Cp(Cp, Temperature)
+/*You can change the name of the variables Cp and temperature, but the order must be the same*/
+Temperature = 700
+
+/**Calculating TEMPERATURE or PRESSURE with this kind of thermodynamical equations may require and initial guess for the variable*/
+
+/*Use the PLAY button, or F3 to solve the equations
+Use F4 or the REFRESH button in Render equations in order to wirte the equations properly. */ 
+/**Press F1 or go to HELP/HELP in the toolbar to get more information.*/
+
+/*This example is stored in the carpet of the program if you wan't to see it again.*/
+@$@%@EndOfEquationData@$@%@
+@$@%@EndOfInitialVariableValueData@$@%@
