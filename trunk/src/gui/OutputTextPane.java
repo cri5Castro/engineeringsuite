@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.image.BufferedImage;
 import java.util.StringTokenizer;
 
 import net.sourceforge.jeuclid.swing.JMathComponent;
