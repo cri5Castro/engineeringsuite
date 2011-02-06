@@ -37,7 +37,7 @@ import org.dyno.visual.swing.layouts.Leading;
  */
 public class Principal extends JFrame {
 
-	public static final String VERSION = new String("1.1");
+	public static final String VERSION = new String("1.01");
 
 	/**
 	 * The actual file to save
