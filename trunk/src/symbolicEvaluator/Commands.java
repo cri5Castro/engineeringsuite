@@ -398,7 +398,8 @@ public class Commands {
 					+ gui.Translation.Language.get(194)
 					+ comillas
 					+ " Product[polynomial,{var,initial point,final point,step}]; e.g:Product[x,{x,1,4,1}] ->(24)\n"
-					+ ""
+					/*+ ""	//FUNCTIONS ELIMINATED BECAUSE THIS COMMANDS ARE NOT AVALAIBLE ON MECONSOLE0.0.9
+					 * 		//AND HIGHER VERSION DOESN'T WORK AS GOOD AS THAT ONE
 					+ comillas
 					+ gui.Translation.Language.get(378)
 					+ comillas
@@ -417,7 +418,7 @@ public class Commands {
 					+ comillas
 					+ gui.Translation.Language.get(381)
 					+ comillas
-					+ " NRoots[Function]; e.g:NRoots[Sin[13]*x^2 + 5*x + 10] ->{-2.5437534046413663,-9.356275778426076}\n";
+					+ " NRoots[Function]; e.g:NRoots[Sin[13]*x^2 + 5*x + 10] ->{-2.5437534046413663,-9.356275778426076}\n"*/;
 
 		}
 		return aux;

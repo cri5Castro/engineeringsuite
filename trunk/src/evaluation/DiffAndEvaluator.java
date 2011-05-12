@@ -82,7 +82,7 @@ public class DiffAndEvaluator {
 	 */
 	public static double Evaluate(String s) {
 		if (s != null) {
-			try {
+			try {				
 				return Double.parseDouble(util.evaluate(s).fullFormString());
 			} catch (DivisionByZero D) {
 				D.printStackTrace();

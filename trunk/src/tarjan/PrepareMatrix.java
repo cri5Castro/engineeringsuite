@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import evaluation.DiffAndEvaluator;
+
 import String2ME.CheckString;
 import String2ME.DerivEquation;
 import String2ME.EqStorer;
@@ -479,11 +481,11 @@ public class PrepareMatrix {
 					if (auxV.getVar().equalsIgnoreCase(
 							CheckString.Functions.get(pos).aux.get(0).GetVar())) {
 						CheckString.OneEquationVar.add(auxV);
+DiffAndEvaluator.Evaluate(auxV.getVar());					
 						it.remove();
 						found = true;
 					}
 				}
-
 				updateFunctions(CheckString.Functions.get(pos).aux.get(0)
 						.GetVar());
 				// Store the function
