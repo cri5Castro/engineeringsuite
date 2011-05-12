@@ -70,7 +70,6 @@ public class LaunchOperations implements Runnable {
 			if (One) {
 				// At first we try the ConstantSolver. If the return is false
 				// then we will try a different method
-
 				if (!Newton.ConstantSolver(function, var)) {
 					switch (Config.SingleVariableMethod) {
 					case 1:

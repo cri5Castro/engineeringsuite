@@ -106,7 +106,8 @@ public class MathMLWriter {
 			try {
 				node = fParser.parse(inputExpression);
 				parsedExpression = AST2Expr.CONST.convert(node);
-				out.write(parsedExpression.internalFormString(false));
+				out.write(parsedExpression.fullFormString());
+				//out.write(parsedExpression.internalFormString(false));
 			} catch (final Throwable e) {
 				return;
 				// parsedExpression == null ==> fError occured

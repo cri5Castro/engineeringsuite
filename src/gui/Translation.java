@@ -60,7 +60,7 @@ public class Translation {
 			Language.add(">> Versión actual ");
 			Language.add("Este programa está licenciado bajo la LGPL");
 			/* 35 */Language
-					.add("Vaya a\nhttps://code.google.com/p/engineeringsuite/\npara más información");
+					.add("Vaya a www.gnu.org/licenses/lgpl.html para más información");
 			Language.add("Sobre engineering Suite");
 			Language.add("Preferencias");
 			Language.add("Resolver");
@@ -655,7 +655,8 @@ public class Translation {
 			Language.add(">> Project manager : Dr. Francisco José Gaspar");
 			Language.add(">> Current version ");
 			Language.add("This program is licensed under the LGPL");
-			/* 35 */Language.add("See\nhttps://code.google.com/p/engineeringsuite/\nfor more information");
+			/* 35 */Language
+					.add("See www.gnu.org/licenses/lgpl.html for more information");
 			Language.add("About engineering Suite");
 			Language.add("Preferences");
 			Language.add("Solve");
